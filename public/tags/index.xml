@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on LabVeilleTech - Ksel</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on LabVeilleTech - Ksel</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apprentissage</title>
+      <link>http://localhost:1313/tags/apprentissage/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/apprentissage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IA</title>
+      <link>http://localhost:1313/tags/ia/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>News</title>
+      <link>http://localhost:1313/tags/news/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/news/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivité</title>
+      <link>http://localhost:1313/tags/productivit%C3%A9/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/productivit%C3%A9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RSS</title>
+      <link>http://localhost:1313/tags/rss/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>http://localhost:1313/tags/tech/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Veille</title>
+      <link>http://localhost:1313/tags/veille/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/veille/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

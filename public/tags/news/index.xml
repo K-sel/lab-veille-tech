@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>News on LabVeilleTech - Ksel</title>
+    <link>http://localhost:1313/tags/news/</link>
+    <description>Recent content in News on LabVeilleTech - Ksel</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mon système de veille, mes abonnements, ma routine</title>
+      <link>http://localhost:1313/articles/systeme-de-veille/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/systeme-de-veille/</guid>
+      <description>Comment j&amp;rsquo;organise ma veille tech avec Feedly, des newsletters et 20 minutes par jour.</description>
+    </item>
+  </channel>
+</rss>

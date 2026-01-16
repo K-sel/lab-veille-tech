@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>La balise HTML &lt;geolocation&gt; arrive : ce que ça change pour les devs indie | LabVeilleTech - Ksel</title>
+<meta name="keywords" content="HTML, Géolocalisation, Web API, Chrome">
+<meta name="description" content="Chrome 144 introduit un nouvel élément HTML : &lt;geolocation&gt;. Pour les indie hackers qui développent des apps web avec des fonctionnalités de localisation, c&rsquo;est une simplification bienvenue — et une occasion de réfléchir aux limites du web face au natif.
+Ce que change la balise &lt;geolocation&gt;
+Jusqu&rsquo;à maintenant, demander la position d&rsquo;un utilisateur passait par l&rsquo;API JavaScript navigator.geolocation.getCurrentPosition(). Le problème : cette approche impérative déclenche des popups d&rsquo;autorisation qui interrompent l&rsquo;utilisateur, souvent au mauvais moment. Pire, si l&rsquo;utilisateur refuse trois fois, Chrome bloque silencieusement les demandes pendant une semaine. Ton code échoue sans explication.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/articles/article-geolocation-html/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/articles/article-geolocation-html/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="LabVeilleTech - Ksel (Alt + H)">LabVeilleTech - Ksel</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Accueil">
+                    <span>Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/articles/" title="Articles">
+                    <span>Articles</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="À propos">
+                    <span>À propos</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      La balise HTML &lt;geolocation&gt; arrive : ce que ça change pour les devs indie
+    </h1>
+    <div class="post-meta"><span title='2025-01-16 00:00:00 +0000 UTC'>January 16, 2025</span>&nbsp;·&nbsp;<span>4 min</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Chrome 144 introduit un nouvel élément HTML : <code>&lt;geolocation&gt;</code>. Pour les indie hackers qui développent des apps web avec des fonctionnalités de localisation, c&rsquo;est une simplification bienvenue — et une occasion de réfléchir aux limites du web face au natif.</p>
+<h2 id="ce-que-change-la-balise-geolocation">Ce que change la balise <code>&lt;geolocation&gt;</code><a hidden class="anchor" aria-hidden="true" href="#ce-que-change-la-balise-geolocation">#</a></h2>
+<p>Jusqu&rsquo;à maintenant, demander la position d&rsquo;un utilisateur passait par l&rsquo;API JavaScript <code>navigator.geolocation.getCurrentPosition()</code>. Le problème : cette approche impérative déclenche des popups d&rsquo;autorisation qui interrompent l&rsquo;utilisateur, souvent au mauvais moment. Pire, si l&rsquo;utilisateur refuse trois fois, Chrome bloque silencieusement les demandes pendant une semaine. Ton code échoue sans explication.</p>
+<p>La nouvelle balise <code>&lt;geolocation&gt;</code> change la donne. L&rsquo;autorisation est déclenchée uniquement quand l&rsquo;utilisateur clique sur l&rsquo;élément — pas au chargement de la page, pas via un script. C&rsquo;est déclaratif, contextuel, et contrôlé par le navigateur.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">geolocation</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">onlocation</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;handleLocation(event)&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">accuracymode</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;precise&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">geolocation</span>&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handleLocation</span>(<span style="color:#a6e22e">event</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">position</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">latitude</span>, <span style="color:#a6e22e">longitude</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">position</span>.<span style="color:#a6e22e">coords</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Position :&#34;</span>, <span style="color:#a6e22e">latitude</span>, <span style="color:#a6e22e">longitude</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Plus besoin de gérer manuellement les callbacks, les états d&rsquo;erreur, les cas de blocage. Le navigateur s&rsquo;occupe de tout, y compris d&rsquo;un flux de récupération si l&rsquo;utilisateur avait précédemment bloqué l&rsquo;accès.</p>
+<h2 id="les-chiffres-qui-valident-le-concept">Les chiffres qui valident le concept<a hidden class="anchor" aria-hidden="true" href="#les-chiffres-qui-valident-le-concept">#</a></h2>
+<p>Avant de lancer la balise <code>&lt;geolocation&gt;</code>, Chrome a testé un élément générique <code>&lt;permission&gt;</code> pendant plusieurs versions. Les résultats sont parlants :</p>
+<ul>
+<li><strong>Zoom</strong> : -46,9% d&rsquo;erreurs de capture caméra/micro</li>
+<li><strong>Immobiliare.it</strong> : +20% de flux de géolocalisation réussis</li>
+<li><strong>ZapImóveis</strong> : 54,4% de récupération pour les utilisateurs précédemment bloqués</li>
+</ul>
+<p>Le problème n&rsquo;était pas la fonctionnalité. C&rsquo;était le manque de contexte au moment de la demande.</p>
+<h2 id="le-parallèle-avec-mon-projet-track">Le parallèle avec mon projet Track<a hidden class="anchor" aria-hidden="true" href="#le-parallèle-avec-mon-projet-track">#</a></h2>
+<p>J&rsquo;ai récemment terminé <a href="https://www.jpinard.ch/projets/tracks">Track</a>, une PWA de tracking sportif développée dans le cadre d&rsquo;un projet croisé entre deux cours à la HEIG-VD (ArchiOWeb et DevMobil). L&rsquo;app enregistre les sorties running/vélo via les capteurs du téléphone : tracé GPS en temps réel, calcul de distance et dénivelé, photos géolocalisées, enrichissement météo automatique.</p>
+<p>La géolocalisation était au cœur du projet. Avec l&rsquo;API JavaScript actuelle, j&rsquo;ai dû gérer pas mal de cas limites : utilisateur qui refuse, blocage silencieux, demande qui arrive trop tôt dans le flow. La balise <code>&lt;geolocation&gt;</code> aurait simplifié cette partie du code.</p>
+<p>Mais — et c&rsquo;est là que ça devient intéressant — même avec cette amélioration, le web reste limité face au natif.</p>
+<h2 id="les-limites-du-web--lexemple-de-laltimètre-barométrique">Les limites du web : l&rsquo;exemple de l&rsquo;altimètre barométrique<a hidden class="anchor" aria-hidden="true" href="#les-limites-du-web--lexemple-de-laltimètre-barométrique">#</a></h2>
+<p>En développant Track, j&rsquo;ai voulu intégrer l&rsquo;altitude barométrique. Sur une app native, l&rsquo;altimètre du téléphone donne une altitude précise et réactive, idéale pour calculer le dénivelé en temps réel.</p>
+<p>Sur le web ? Impossible. L&rsquo;API Geolocation donne une altitude GPS, mais elle est bruitée et peu fiable pour du tracking sportif précis. L&rsquo;altimètre barométrique, lui, n&rsquo;est tout simplement pas exposé aux applications web.</p>
+<p>C&rsquo;est le genre de friction qui pousse certains projets vers le natif ou vers des solutions hybrides comme Capacitor. Pour un side project ou un MVP, ça peut être un deal-breaker.</p>
+<p>La balise <code>&lt;geolocation&gt;</code> améliore l&rsquo;expérience utilisateur, mais elle ne résout pas ce problème fondamental : certains capteurs restent hors de portée du web.</p>
+<h2 id="pourquoi-cest-pertinent-pour-les-indie-hackers">Pourquoi c&rsquo;est pertinent pour les indie hackers<a hidden class="anchor" aria-hidden="true" href="#pourquoi-cest-pertinent-pour-les-indie-hackers">#</a></h2>
+<p>Cette évolution s&rsquo;adresse surtout aux indie hackers avec un background dev — ceux qui comprennent comment fonctionne l&rsquo;API Geolocation actuelle et qui peuvent apprécier la simplification.</p>
+<p>Concrètement, si tu développes :</p>
+<ul>
+<li>Une app de livraison ou de services géolocalisés</li>
+<li>Un outil de tracking (sport, transport, logistique)</li>
+<li>Une fonctionnalité &ldquo;trouver autour de moi&rdquo;</li>
+</ul>
+<p>&hellip;cette balise va te faire gagner du temps et améliorer ton taux de conversion sur les autorisations.</p>
+<p>L&rsquo;amélioration progressive est aussi bien pensée : tu peux utiliser la balise avec un fallback vers l&rsquo;API JavaScript pour les navigateurs non compatibles.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">geolocation</span> <span style="color:#a6e22e">onlocation</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;updateMap()&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- Fallback pour navigateurs non compatibles --&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navigator.geolocation.getCurrentPosition(updateMap)&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    Utiliser ma position
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">geolocation</span>&gt;
+</span></span></code></pre></div><h2 id="quand-cette-info-me-sera-utile">Quand cette info me sera utile<a hidden class="anchor" aria-hidden="true" href="#quand-cette-info-me-sera-utile">#</a></h2>
+<p>Pour mes futurs projets demandant la géolocalisation, je garderai cette balise en tête. Elle simplifie le code, améliore l&rsquo;UX, et réduit les frictions liées aux permissions.</p>
+<p>Mais je resterai aussi conscient des limites du web. Pour certains cas d&rsquo;usage sportifs ou IoT, le natif reste incontournable. La question à se poser avant de commencer : est-ce que les capteurs dont j&rsquo;ai besoin sont accessibles depuis le navigateur ?</p>
+<p>Source : <a href="https://developer.chrome.com/blog/geolocation-html-element?hl=fr">Chrome for Developers</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/html/">HTML</a></li>
+      <li><a href="http://localhost:1313/tags/g%C3%A9olocalisation/">Géolocalisation</a></li>
+      <li><a href="http://localhost:1313/tags/web-api/">Web API</a></li>
+      <li><a href="http://localhost:1313/tags/chrome/">Chrome</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/articles/article-kleo-62k-mrr/">
+    <span class="title">« Précédent</span>
+    <br>
+    <span>De 0 à 62k$ MRR en trois mois : les leçons de Kleo</span>
+  </a>
+  <a class="next" href="http://localhost:1313/articles/claude-cowork-security-breach/">
+    <span class="title">Suivant »</span>
+    <br>
+    <span>Claude Cowork exfiltre des fichiers : ce que ça signifie pour les indie hackers</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">LabVeilleTech - Ksel</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'Copier';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'Copié !';
+            setTimeout(() => {
+                copybutton.innerHTML = 'Copier';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

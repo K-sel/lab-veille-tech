@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Web API on LabVeilleTech - Ksel</title>
+    <link>http://localhost:1313/tags/web-api/</link>
+    <description>Recent content in Web API on LabVeilleTech - Ksel</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 16 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/web-api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La balise HTML &lt;geolocation&gt; arrive : ce que ça change pour les devs indie</title>
+      <link>http://localhost:1313/articles/article-geolocation-html/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article-geolocation-html/</guid>
+      <description>&lt;p&gt;Chrome 144 introduit un nouvel élément HTML : &lt;code&gt;&amp;lt;geolocation&amp;gt;&lt;/code&gt;. Pour les indie hackers qui développent des apps web avec des fonctionnalités de localisation, c&amp;rsquo;est une simplification bienvenue — et une occasion de réfléchir aux limites du web face au natif.&lt;/p&gt;
+&lt;h2 id=&#34;ce-que-change-la-balise-geolocation&#34;&gt;Ce que change la balise &lt;code&gt;&amp;lt;geolocation&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Jusqu&amp;rsquo;à maintenant, demander la position d&amp;rsquo;un utilisateur passait par l&amp;rsquo;API JavaScript &lt;code&gt;navigator.geolocation.getCurrentPosition()&lt;/code&gt;. Le problème : cette approche impérative déclenche des popups d&amp;rsquo;autorisation qui interrompent l&amp;rsquo;utilisateur, souvent au mauvais moment. Pire, si l&amp;rsquo;utilisateur refuse trois fois, Chrome bloque silencieusement les demandes pendant une semaine. Ton code échoue sans explication.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

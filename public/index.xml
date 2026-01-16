@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LabVeilleTech - Ksel</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on LabVeilleTech - Ksel</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM et apprentissage : aide ou béquille ?</title>
+      <link>http://localhost:1313/articles/apprendre-avec-les-llm/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/apprendre-avec-les-llm/</guid>
+      <description>Depuis que j&amp;rsquo;utilise Claude et ChatGPT quotidiennement, une question me taraude : est-ce que j&amp;rsquo;apprends encore, ou est-ce que je sous-traite ma réflexion ?</description>
+    </item>
+    <item>
+      <title>Mon système de veille, mes abonnements, ma routine</title>
+      <link>http://localhost:1313/articles/systeme-de-veille/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/systeme-de-veille/</guid>
+      <description>Comment j&amp;rsquo;organise ma veille tech avec Feedly, des newsletters et 20 minutes par jour.</description>
+    </item>
+    <item>
+      <title>De 0 à 62k$ MRR en trois mois : les leçons de Kleo</title>
+      <link>http://localhost:1313/articles/article-kleo-62k-mrr/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article-kleo-62k-mrr/</guid>
+      <description>&lt;p&gt;Cameron Trew a quitté son job de Senior Engineer à Londres, est retourné vivre chez ses parents, et trois mois plus tard atteignait 62k$ de revenus mensuels récurrents avec Kleo. Voici ce que son parcours révèle sur ce qui fonctionne vraiment dans l&amp;rsquo;indie hacking.&lt;/p&gt;
+&lt;h2 id=&#34;le-contexte&#34;&gt;Le contexte&lt;/h2&gt;
+&lt;p&gt;Cameron avait tout sur le papier : Senior Engineer, appartement au 33ème étage à Canary Wharf, salaire confortable. Mais il ne construisait rien qui lui appartenait. Les promotions avaient perdu leur attrait. Il a pris la décision de tout quitter pour lancer quelque chose à lui.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La balise HTML &lt;geolocation&gt; arrive : ce que ça change pour les devs indie</title>
+      <link>http://localhost:1313/articles/article-geolocation-html/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article-geolocation-html/</guid>
+      <description>&lt;p&gt;Chrome 144 introduit un nouvel élément HTML : &lt;code&gt;&amp;lt;geolocation&amp;gt;&lt;/code&gt;. Pour les indie hackers qui développent des apps web avec des fonctionnalités de localisation, c&amp;rsquo;est une simplification bienvenue — et une occasion de réfléchir aux limites du web face au natif.&lt;/p&gt;
+&lt;h2 id=&#34;ce-que-change-la-balise-geolocation&#34;&gt;Ce que change la balise &lt;code&gt;&amp;lt;geolocation&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Jusqu&amp;rsquo;à maintenant, demander la position d&amp;rsquo;un utilisateur passait par l&amp;rsquo;API JavaScript &lt;code&gt;navigator.geolocation.getCurrentPosition()&lt;/code&gt;. Le problème : cette approche impérative déclenche des popups d&amp;rsquo;autorisation qui interrompent l&amp;rsquo;utilisateur, souvent au mauvais moment. Pire, si l&amp;rsquo;utilisateur refuse trois fois, Chrome bloque silencieusement les demandes pendant une semaine. Ton code échoue sans explication.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>À propos</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;mon-domaine-de-veille&#34;&gt;Mon domaine de veille&lt;/h2&gt;
+&lt;p&gt;Ce blog couvre l&amp;rsquo;univers des &lt;strong&gt;indie hackers&lt;/strong&gt; : des entrepreneurs solo ou en petite équipe qui construisent des produits rentables sans lever de fonds. SaaS bootstrappés, side projects monétisés, automatisations, stratégies de croissance organique.&lt;/p&gt;
+&lt;p&gt;Pourquoi ce domaine ? Parce que c&amp;rsquo;est exactement ce que je veux faire à terme.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;pourquoi-ce-domaine-me-parle-mon-ikigai&#34;&gt;Pourquoi ce domaine me parle (mon Ikigai)&lt;/h2&gt;
+&lt;h3 id=&#34;ce-que-jaime-faire&#34;&gt;Ce que j&amp;rsquo;aime faire&lt;/h3&gt;
+&lt;p&gt;Créer des produits tech de A à Z — coder, designer, prendre des décisions. Avoir de la variété dans mon travail plutôt que de répéter les mêmes tâches. Travailler sur des projets qui me motivent personnellement. Et en parallèle, me dépasser physiquement en trail et en course à pied.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Claude Cowork exfiltre des fichiers : ce que ça signifie pour les indie hackers</title>
+      <link>http://localhost:1313/articles/claude-cowork-security-breach/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/claude-cowork-security-breach/</guid>
+      <description>&lt;p&gt;Une vulnérabilité découverte dans Claude Cowork permet à des attaquants d&amp;rsquo;exfiltrer les fichiers des utilisateurs. Pour les indie hackers qui construisent leurs produits avec l&amp;rsquo;aide de l&amp;rsquo;IA, c&amp;rsquo;est un signal d&amp;rsquo;alarme.&lt;/p&gt;
+&lt;h2 id=&#34;ce-que-lattaque-permet&#34;&gt;Ce que l&amp;rsquo;attaque permet&lt;/h2&gt;
+&lt;p&gt;Des chercheurs en sécurité ont démontré comment exploiter une faille dans l&amp;rsquo;environnement d&amp;rsquo;exécution de code de Claude Cowork. L&amp;rsquo;attaque fonctionne par &lt;strong&gt;prompt injection indirecte&lt;/strong&gt; : un fichier malveillant (un document Word, un &amp;ldquo;skill&amp;rdquo;, ou n&amp;rsquo;importe quel fichier uploadé) contient des instructions cachées que Claude exécute sans demander l&amp;rsquo;approbation de l&amp;rsquo;utilisateur.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

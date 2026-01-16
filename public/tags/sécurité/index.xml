@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sécurité on LabVeilleTech - Ksel</title>
+    <link>http://localhost:1313/tags/s%C3%A9curit%C3%A9/</link>
+    <description>Recent content in Sécurité on LabVeilleTech - Ksel</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/s%C3%A9curit%C3%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Cowork exfiltre des fichiers : ce que ça signifie pour les indie hackers</title>
+      <link>http://localhost:1313/articles/claude-cowork-security-breach/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/claude-cowork-security-breach/</guid>
+      <description>&lt;p&gt;Une vulnérabilité découverte dans Claude Cowork permet à des attaquants d&amp;rsquo;exfiltrer les fichiers des utilisateurs. Pour les indie hackers qui construisent leurs produits avec l&amp;rsquo;aide de l&amp;rsquo;IA, c&amp;rsquo;est un signal d&amp;rsquo;alarme.&lt;/p&gt;
+&lt;h2 id=&#34;ce-que-lattaque-permet&#34;&gt;Ce que l&amp;rsquo;attaque permet&lt;/h2&gt;
+&lt;p&gt;Des chercheurs en sécurité ont démontré comment exploiter une faille dans l&amp;rsquo;environnement d&amp;rsquo;exécution de code de Claude Cowork. L&amp;rsquo;attaque fonctionne par &lt;strong&gt;prompt injection indirecte&lt;/strong&gt; : un fichier malveillant (un document Word, un &amp;ldquo;skill&amp;rdquo;, ou n&amp;rsquo;importe quel fichier uploadé) contient des instructions cachées que Claude exécute sans demander l&amp;rsquo;approbation de l&amp;rsquo;utilisateur.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

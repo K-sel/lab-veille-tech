@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Croissance on LabVeilleTech - Ksel</title>
+    <link>http://localhost:1313/tags/croissance/</link>
+    <description>Recent content in Croissance on LabVeilleTech - Ksel</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 16 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/croissance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>De 0 à 62k$ MRR en trois mois : les leçons de Kleo</title>
+      <link>http://localhost:1313/articles/article-kleo-62k-mrr/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/article-kleo-62k-mrr/</guid>
+      <description>&lt;p&gt;Cameron Trew a quitté son job de Senior Engineer à Londres, est retourné vivre chez ses parents, et trois mois plus tard atteignait 62k$ de revenus mensuels récurrents avec Kleo. Voici ce que son parcours révèle sur ce qui fonctionne vraiment dans l&amp;rsquo;indie hacking.&lt;/p&gt;
+&lt;h2 id=&#34;le-contexte&#34;&gt;Le contexte&lt;/h2&gt;
+&lt;p&gt;Cameron avait tout sur le papier : Senior Engineer, appartement au 33ème étage à Canary Wharf, salaire confortable. Mais il ne construisait rien qui lui appartenait. Les promotions avaient perdu leur attrait. Il a pris la décision de tout quitter pour lancer quelque chose à lui.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
