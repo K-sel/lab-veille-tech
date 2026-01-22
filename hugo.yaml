@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL : "https://k-sel.github.io/lab-veille-tech/"
 languageCode: fr
 title: LabVeilleTech - Ksel
 theme: ["PaperMod"]

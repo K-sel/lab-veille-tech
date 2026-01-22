@@ -14,18 +14,6 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/claude/</loc>
-    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/articles/claude-cowork-security-breach/</loc>
-    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/fuites/</loc>
-    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/ia/</loc>
-    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/ia/</loc>
     <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -50,9 +38,6 @@
     <loc>http://localhost:1313/tags/rss/</loc>
     <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/s%C3%A9curit%C3%A9/</loc>
-    <lastmod>2026-01-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -62,7 +47,46 @@
     <loc>http://localhost:1313/tags/veille/</loc>
     <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/chrome/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/croissance/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/article-kleo-62k-mrr/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/distribution/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/g%C3%A9olocalisation/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/html/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/article-geolocation-html/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/outils/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/saas/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/web-api/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/claude-cowork-security-breach/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/indie-hacking/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/s%C3%A9curit%C3%A9/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
   </url>
 </urlset>

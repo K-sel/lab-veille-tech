@@ -23,31 +23,10 @@
       <description></description>
     </item>
     <item>
-      <title>Claude</title>
-      <link>http://localhost:1313/categories/claude/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/claude/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fuites</title>
-      <link>http://localhost:1313/categories/fuites/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/fuites/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IA</title>
-      <link>http://localhost:1313/categories/ia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/ia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sécurité</title>
-      <link>http://localhost:1313/categories/s%C3%A9curit%C3%A9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/s%C3%A9curit%C3%A9/</guid>
+      <title>Outils</title>
+      <link>http://localhost:1313/categories/outils/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/outils/</guid>
       <description></description>
     </item>
   </channel>

@@ -57,5 +57,68 @@
       <guid>http://localhost:1313/tags/veille/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Chrome</title>
+      <link>http://localhost:1313/tags/chrome/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/chrome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Croissance</title>
+      <link>http://localhost:1313/tags/croissance/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/croissance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distribution</title>
+      <link>http://localhost:1313/tags/distribution/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/distribution/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Géolocalisation</title>
+      <link>http://localhost:1313/tags/g%C3%A9olocalisation/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/g%C3%A9olocalisation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTML</title>
+      <link>http://localhost:1313/tags/html/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SaaS</title>
+      <link>http://localhost:1313/tags/saas/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/saas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web API</title>
+      <link>http://localhost:1313/tags/web-api/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/web-api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Indie Hacking</title>
+      <link>http://localhost:1313/tags/indie-hacking/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/indie-hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sécurité</title>
+      <link>http://localhost:1313/tags/s%C3%A9curit%C3%A9/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/s%C3%A9curit%C3%A9/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
